@@ -1,7 +1,9 @@
 :root {
     --back: white;
     --card: #f9f9f9;
-    --border: #97d3fed4;
+    --border: #dee4ec;
+    --boton: #0740f9;
+    --boton1: #000000;
 }
 
 body {
@@ -44,12 +46,26 @@ body {
 }
 
 .btn-primary {
-    background: #000;
+    background: var(--boton);
     color: white;
     border: none;
     padding: 8px 14px;
     border-radius: 6px;
     cursor: pointer;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.btn-primary1 {
+    background: var(--boton1);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
 }
 
 .btn-secondary {
@@ -59,6 +75,32 @@ body {
     padding: 8px 14px;
     border-radius: 6px;
     cursor: pointer;
+    font-size: .875rem;
+    line-height: 1.25rem;
+
+}
+
+.btn-secondary2 {
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 8px 20px 8px 20px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.btn-secondary2:hover {
+    border-radius: 8px;
+    color: rgb(16 24 40);
+    background-color: rgba(242, 244, 247, 0.799);
+
+}
+
+p {
+    width: 60%;
+    text-align: justify;
+    margin-bottom: 40px;
 }
 
 /* ===== Sidebar ===== */
@@ -82,6 +124,7 @@ nav .navegar {
 }
 
 nav .nose {
+    
     padding: 12px 20px 12px 20px;
     font-weight: 500;
     display: block;
@@ -92,7 +135,6 @@ nav .nose {
 }
 
 nav .nose:hover {
-
     border-radius: 8px;
     color: rgb(16 24 40);
     background-color: rgba(242, 244, 247, 0.799);
@@ -126,7 +168,8 @@ nav .nose:hover {
 .intro-buttons {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
+
 }
 
 .video-preview {
@@ -159,13 +202,18 @@ nav .nose:hover {
 .card {
     background: rgb(216 227 244);
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
     height: 274px;
     align-items: center;
     border: solid 0.5px #ccc;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, 0.08);
+
 }
 
 .tama {
@@ -190,8 +238,12 @@ nav .nose:hover {
     width: 100%;
     height: 25%;
     border: solid 0.5px #dddddd;
-    justify-content: space-around;
+    justify-content: flex-start;
     background: var(--back);
+}
+
+.left {
+    padding-left: 20px;
 }
 
 /* ===== Responsive ===== */
